@@ -1,0 +1,130 @@
+body {
+    font-family: Tahoma, sans-serif;
+    margin: 0;
+    color: #eee;
+    font-size: 16px;
+}
+
+#login-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('Beer-Filling-Machine-2-1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#login-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 350px;
+}
+
+#login-container h1 {
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+#login-container input, #login-container button {
+    margin: 12px 0;
+    padding: 12px;
+    width: 280px;
+    border: 1px solid #666;
+    background-color: #555;
+    color: #eee;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+#login-container button {
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#login-container button:hover {
+    background-color: #0056b3;
+}
+
+#login-status {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+#contact-info {
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+#contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#social-icons {
+    margin-top: 20px;
+}
+
+#social-icons a {
+    color: #eee;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+#social-icons a:hover {
+    color: #007bff;
+}
+
+#menu-tab {
+    margin: 20px;
+}
+
+#menu-tab button {
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #555;
+    color: #eee;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#dashboard, #history {
+    border: 1px solid #666;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #444;
+}
+
+#checklist-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#checklist-table th, #checklist-table td {
+    border: 1px solid #666;
+    padding: 8px;
+    text-align: left;
+}
+
+#checklist-table th {
+    background-color: #555;
+}
+
+.replace-needed {
+    background-color: #ff6347; /* Light red for replace needed */
+}
+
+#replacement-message {
+    color: #ff6347;
+    font-weight: bold;
+    margin-top: 10px;
+    white-space: pre-line;
+}

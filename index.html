@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Machine RUL Prediction</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="login-tab">
+        <div id="login-container">
+            <h1>Welcome to the Bottle Filling Machine</h1>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button id="login-button">Login</button>
+            <div id="login-status"></div>
+            <div id="contact-info">
+                <p>Contact Us:</p>
+                <p>Phone: +263714181038</p>
+                <p>Email: larry@ingwebu.co.zw</p>
+                <a href="bottle_filling_manual.pdf" target="_blank">Help (User Manual)</a>
+            </div>
+            <div id="social-icons">
+                <a href="https://twitter.com/ingwebuzw/status/1387059251990999045" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/ingwebubreweries/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://zw.linkedin.com/company/ingwebu-breweries" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/ingwebu.breweries.zimbabwe/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com/channel/UCXezOyyCbXQ6VjfBW57yORQ/videos?view=0&sort=dd&shelf_id=0" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+    <div id="menu-tab" style="display: none;">
+        <button id="dashboard-button">Dashboard</button>
+        <button id="history-button">History</button>
+        <button id="signout-button">Sign Out</button>
+        <button id="randomize-button">Randomize Data</button>
+        <div id="replacement-message"></div>
+
+        <div id="dashboard" style="display: block;">
+            <h2>Real-Time Data</h2>
+            <p>UDI: <span id="udi">1000</span></p>
+            <p>Torque: <span id="torque">50</span> Nm</p>
+            <p>Speed: <span id="speed">1500</span> RPM</p>
+            <p>Temperature: <span id="temperature">300</span> K</p>
+            <p>Pressure: <span id="pressure">100</span> kPa</p>
+            <p>Wear: <span id="wear">150</span></p>
+            <p>Vibration: <span id="vibration">5</span></p>
+            <p>RUL: <span id="rul">100</span></p>
+
+            <h2>Checklist</h2>
+            <table id="checklist-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>FILLER BELLOW VALVES</td><td id="filler-valves-wk1"></td></tr>
+                    <tr><td>SHAFTS</td><td id="shafts-wk1"></td></tr>
+                    <tr><td>HEADER TANK</td><td id="header-tank-wk1"></td></tr>
+                    <tr><td>FILLER MAIN DRIVE</td><td id="filler-drive-wk1"></td></tr>
+                    <tr><td>FILLING NOZZLES</td><td id="filling-nozzles-wk1"></td></tr>
+                    <tr><td>BOTTLE LIFTERS AND GUIDES</td><td id="lifters-guides-wk1"></td></tr>
+                    <tr><td>POT GUIDES</td><td id="pot-guides-wk1"></td></tr>
+                    <tr><td>TRANSFER PLATE</td><td id="transfer-plate-wk1"></td></tr>
+                    <tr><td>SEALING RUBBER INSERTS</td><td id="rubber-inserts-wk1"></td></tr>
+                    <tr><td>FILLER AND SEALING SPROCKETS</td><td id="sprockets-wk1"></td></tr>
+                    <tr><td>CAMS</td><td id="cams-wk1"></td></tr>
+                    <tr><td>BEARINGS</td><td id="bearings-wk1"></td></tr>
+                    <tr><td>GREASING</td><td id="greasing-wk1"></td></tr>
+                    <tr><td>TIMING</td><td id="timing-wk1"></td></tr>
+                    <tr><td>LIDS CONVEYING (LC) WATERFALL CONVEYOR</td><td id="waterfall-conveyor-wk1"></td></tr>
+                    <tr><td>POT CONVEYING (PC) LOOSE BOLTS AND NUTS</td><td id="loose-bolts-wk1"></td></tr>
+                    <tr><td>FILLER AND LC PNEUMATIC SYSTEM</td><td id="pneumatic-system-wk1"></td></tr>
+                    <tr><td>FILLER AND PC GEAR BOX OIL</td><td id="gear-box-oil-wk1"></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="history" style="display: none;">
+            <h2>History</h2>
+            <p>History data will be shown here.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
